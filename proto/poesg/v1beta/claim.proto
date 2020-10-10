@@ -1,0 +1,16 @@
+syntax = "proto3";
+package poesg.poesg.v1beta1;
+
+option go_package = "github.com/lukitsbrian/poe-sg/x/poesg/types";
+
+import "gogoproto/gogo.proto";
+
+message MsgClaim {
+  bytes creator = 1 [(gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress"];
+  string proof = 2; 
+}
+
+message MsgDeleteClaim {
+  string proof = 1;
+  bytes creator = 2 [(gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.AccAddress"];
+}

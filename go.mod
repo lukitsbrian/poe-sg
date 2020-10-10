@@ -12,9 +12,7 @@ require (
 	github.com/spf13/cobra v1.0.0
 	github.com/tendermint/tendermint v0.34.0-rc3
 	github.com/tendermint/tm-db v0.6.2
-	google.golang.org/genproto v0.0.0-20200825200019-8632dd797987
 	google.golang.org/grpc v1.32.0
 )
 
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.2-alpha.regen.4
- 
